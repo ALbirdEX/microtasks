@@ -12,7 +12,7 @@ type StudentType = {
 }
 
 
-export const NewComponents = (props: NewComponentsType) => {
+export const MapComponents = (props: NewComponentsType) => {
     return (
         <ul>
             <>{props.students.map((objFromStudentArr, index) => {

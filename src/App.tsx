@@ -3,12 +3,13 @@ import './App.css';
 import {Header} from "./site/Header";
 import {Body} from "./site/Body";
 import {Futer} from "./site/Futer";
-import {NewComponents} from "./components/NewComponents";
+import {MapComponents} from "./components/MapComponents";
 import {students, topCars} from "./database";
 import {CarsTab} from "./components/CarsTab";
 import {Button} from "./components/Button";
 import {UniversalButton} from "./components/UniversalButton";
 import {Hook} from "./Hook";
+import {FilterComponents} from "./components/filter/FilterComponents";
 
 
 function App() {
@@ -29,13 +30,14 @@ function App() {
             <Header title={"NEW HADER"}/>
             <Body titleForBody={"NEW BODY"}/>
             <Futer titleForFuter={"NEW FUTER"}/>
-            <NewComponents students={students}/>
+            <MapComponents students={students}/>
             <CarsTab topCars={topCars}/>
             <Button/>
             <UniversalButton name={"MyYouTubeChanel-1"} callBack={() => Button1Foo('Sanay', 21, "live in Minsk")}/>
             <UniversalButton name={"MyYouTubeChanel-2"} callBack={() => Button2Foo("Petr", 32)}/>
             <UniversalButton name={"Dumb button"} callBack={Button3Foo}/>
             <Hook/>
+            <FilterComponents/>
         </>
     );
 }
