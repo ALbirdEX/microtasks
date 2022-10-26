@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+import {NewComponent} from "./NewComponent";
 
-type FilterType = "all" | "Dollars" | "RUBLS"
+export type FilterType = "all" | "Dollars" | "RUBLS"
 
 export const FilterComponents = () => {
 
@@ -25,13 +26,14 @@ export const FilterComponents = () => {
         currentMoney = money.filter((filterdMoney) => filterdMoney.banknots === 'RUBLS')
     }
 
-    const onClickHandler = (nameButton: FilterType) => {
+    const filteredMoney = (nameButton: FilterType) => {
         setFilter(nameButton)
     }
 
     return (
-        //<NewComponent currentMoney={currentMoney}/>
-        <>
+        <NewComponent currentMoney={currentMoney}
+                      filteredMoney={filteredMoney}/>
+      /*  <>
             <ul>
                 {currentMoney.map((objFromMonneyArr, index) => {
 
@@ -49,6 +51,6 @@ export const FilterComponents = () => {
                 <button onClick={() => onClickHandler("RUBLS")}>RUBLS</button>
                 <button onClick={() => onClickHandler("Dollars")}>Dollars</button>
             </div>
-        </>
+        </>*/
     );
 };
