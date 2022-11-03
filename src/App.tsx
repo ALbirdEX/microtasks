@@ -8,7 +8,7 @@ import {students, topCars} from "./database";
 import {CarsTab} from "./components/CarsTab";
 import {Button} from "./components/Button";
 import {UniversalButton} from "./components/UniversalButton";
-import {Hook} from "./Hook";
+import {Hook} from "./components/Hook";
 import {FilterComponents} from "./components/filter/FilterComponents";
 
 
