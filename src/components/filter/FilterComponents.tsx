@@ -18,7 +18,7 @@ export const FilterComponents = () => {
 
     const [filter, setFilter] = useState<FilterType>("all")
 
-    /* let currentMoney = money;
+     let currentMoney = money;
      if (filter === "Dollars") {
          currentMoney = money.filter((filterdMoney) => filterdMoney.banknots === 'Dollars')
      }
@@ -26,12 +26,11 @@ export const FilterComponents = () => {
          currentMoney = money.filter((filterdMoney) => filterdMoney.banknots === 'RUBLS')
      }
 
-     }*/
 
-    let currentMoney = filter === "all" ? money :
+   /* let currentMoney = filter === "all" ? money :
         money.filter(filter === "Dollars" ? ((filtMoney) => filtMoney.banknots === 'Dollars') :
             ((filtMoney) => filtMoney.banknots === 'RUBLS'))
-
+*/
     const filteredMoney = (nameButton: FilterType) => {
         setFilter(nameButton)
     }
