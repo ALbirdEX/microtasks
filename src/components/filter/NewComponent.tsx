@@ -18,9 +18,8 @@ export const NewComponent = (props: NewComponentPropsType) => {
     }*/
     return (
         <>
-            <ul>
+            <ol>
                 {props.currentMoney.map((objFromMonneyArr, index) => {
-
                     return (
                         <li key={index}>
                             <span>{objFromMonneyArr.banknots}</span>
@@ -29,7 +28,7 @@ export const NewComponent = (props: NewComponentPropsType) => {
                         </li>
                     )
                 })}
-            </ul>
+            </ol>
             <div style={{marginLeft: '40px'}}>
                 <button onClick={() => {
                     props.filteredMoney("all")

@@ -11,7 +11,7 @@ type CarsTabPropsType = {
 
 export const CarsTab = (props: CarsTabPropsType) => {
     return (
-        <div>
+        <ul>
             {props.topCars.map((cars, index) => {
                 return (
                     <table width="250px" border={1} bgcolor="#bdb76b">
@@ -23,6 +23,6 @@ export const CarsTab = (props: CarsTabPropsType) => {
                     </table>
                 )
             })}
-        </div>
+        </ul>
     )
 }

@@ -10,6 +10,7 @@ import {Button} from "./components/Button";
 import {UniversalButton} from "./components/UniversalButton";
 import {Hook} from "./components/Hook";
 import {FilterComponents} from "./components/filter/FilterComponents";
+import {UniversalInput} from "./components/input/UniversalInput";
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
     }
 
     return (
-        <>
+        <div>
             <Header title={"NEW HADER"}/>
             <Body titleForBody={"NEW BODY"}/>
             <Futer titleForFuter={"NEW FUTER"}/>
@@ -38,7 +39,8 @@ function App() {
             <UniversalButton name={"Dumb button"} callBack={Button3Foo}/>
             <Hook/>
             <FilterComponents/>
-        </>
+            <UniversalInput/>
+        </div>
     );
 }
 
